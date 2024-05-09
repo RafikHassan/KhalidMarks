@@ -42,12 +42,12 @@
       <h1>مدرسة خالد بن الوليد للتعليم الأساسي</h1>
       <h2>العام الدراسي 2023/2024</h2>
       <h2>الفصل الدراسي الثاني</h2>
-      <h1 style="color: red;">العبـــارات الوصفيــة</h1>
+      <h1 style="color: red;">الاختبارات القصيرة</h1>
       <br>
 
       <form onsubmit="getMarks(); return false;">
         <input type="text" id="studentNumber" name="studentNumber" required placeholder="أدخل الرقم المدرسي للطالب" />
-        <button type="submit">أظهر العبارات الوصفية</button>
+        <button type="submit">أظهر درجات الاختبارات القصيرة</button>
       </form>
 
     </Center>
@@ -66,7 +66,7 @@
         const notFoundMessage = document.getElementById("not-found-message");
 
         var studentNumber = document.getElementById("studentNumber").value;
-        var url = "https://script.google.com/macros/s/AKfycby-pWIRx37cBklsgVrJeWg_LJMG1ew-8PFo5TVtb8BP7Xfdk-mGFJol_DCjn3-Aa7A0/exec?studentNumber=" + studentNumber;
+        var url = "https://script.google.com/macros/s/AKfycbx0u-26j3JDIbAgYo7f0jJPcoglstzzbyyehSmMFhQRt63wVXmmINmPsomlKb53vzvx/exec?studentNumber=" + studentNumber;
 
         // Show loading indicator
         loadingIndicator.style.display = "block";
@@ -93,7 +93,7 @@
     </script>
 
     <!-- Add the following HTML elements to your page -->
-    <div id="loading-indicator" style="display: none;">جاري جلب العبارات الوصفية للطالب، انتظر لحظات...</div>
+    <div id="loading-indicator" style="display: none;">جاري جلب درجات الاختبارات القصيرة للطالب، انتظر لحظات...</div>
     <div id="not-found-message" style="display: none;">لا يوجد طالب بهذه البيانات، من فضلك أعد المحاولة.</div>
 
 
