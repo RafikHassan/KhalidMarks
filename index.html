@@ -108,8 +108,7 @@
             loadingIndicator.style.display = "none";
             if(data.marks!=="N/A"){
               document.getElementById("result").innerHTML =
-              "الرقم المدرسي: " + data.studentNumber + "<br>" +
-              "اسم الطالب: " + data.marks;
+              data.marks;
             }else{
               notFoundMessage.style.display = "block";
             }
