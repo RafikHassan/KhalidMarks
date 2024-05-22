@@ -110,11 +110,11 @@
           .then(data => {
             // Hide loading indicator and show result
             loadingIndicator.style.display = "none";
-            /*if(data.marks!=="N/A"){*/
+            if(data.marks!=="N/A"){
               document.getElementById("result").innerHTML = data.marks;
-            /*}else{
+            }else{
               notFoundMessage.style.display = "block";
-            }*/
+            }
 
           });
 
