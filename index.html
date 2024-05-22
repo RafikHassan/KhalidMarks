@@ -112,7 +112,7 @@
             loadingIndicator.style.display = "none";
             if(data.marks!=="N/A"){
               document.getElementById("result").innerHTML =
-              data.marks;
+              data.studentNumber + "<br>" + data.marks;
             }else{
               notFoundMessage.style.display = "block";
             }
